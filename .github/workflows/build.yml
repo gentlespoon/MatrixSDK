@@ -14,11 +14,10 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
-      with:
-        swift-version: 5.9.2
+    - uses: swift-actions/setup-swift@v1
+    
     - uses: actions/checkout@v2
-      
+
     - name: Checkout matrix-ios-sdk
       uses: actions/checkout@v2
       with:
