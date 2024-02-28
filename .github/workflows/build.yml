@@ -11,10 +11,11 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
-
-    steps:
-    - uses: swift-actions/setup-swift@v1
+    runs-on: macos-latest    
+    
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest-stable
     
     - uses: actions/checkout@v2
 
